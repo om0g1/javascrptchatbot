@@ -1,0 +1,88 @@
+:root {
+    --medium-gap: 0.5rem;
+    --small-gap: calc(var(--medium-gap) / 2);
+    --very-small-gap: calc(var(--medium-gap) / 4);
+    --large-gap: calc(var(--medium-gap) * 2);
+    --very-large-gap: calc(var(--medium-gap) * 4);
+    --corner-radius: 1rem;
+    --half-radius: calc(var(--corner-radius) / 3);
+    --primary-white: #fefefe;
+    --secondary-white: #fdfdfd;
+    --tertiary-white: #fcfcfc;
+    --faded-white: rgba(254,254,254, 0.5);
+    --primary-black: #000000;
+    --secondary-black: #202020;
+    --tertiary-black: #404040;
+    --faded-black: rgba(0,0,0,0.5);
+    --theme-color: #00a4eb;
+    --faded-theme: #00a4eb15;
+    --primary-background: var(--primary-white);
+    --primary-fade: var(--faded-white);
+    --search-bar-height: 15vh;
+    --navbar-height: 7vh;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    padding: 0 7%;
+}
+
+html,
+body {
+    overflow: hidden;
+}
+
+body {
+    height: 100svh;
+}
+
+#chat-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    gap: var(--medium-gap);
+}
+
+#response-area {
+    height: 90%;
+}
+
+#input-area {
+    height: 10%;
+    padding: var(--medium-gap);
+}
+
+#input-area div {
+    height: 100%;
+    border: 1px solid;
+}
+
+#input-area div form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#input-area div form textarea {
+    width: 100%;
+    height: 100%;
+    outline: transparent;
+    border: none;
+}
+
+#input-area div form input[type="submit"] {
+    height: 100%;
+    aspect-ratio: 1;
+    background-color: transparent;
+    border: none;
+}
