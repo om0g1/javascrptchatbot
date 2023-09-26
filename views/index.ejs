@@ -9,12 +9,12 @@
 <body>
     <section id="chat-area">
         <div id="response-area">
-            <p id="response"></p>
+            <p id="bot-response"></p>
         </div>
         <div id="input-area">
             <div>
-                <form action="/chat" method="post">
-                    <textarea name="input" id="" cols="30" rows="10"></textarea>
+                <form id="chat-input" action="/chat" method="post">
+                    <textarea name="input" id="message-input" cols="30" rows="10"></textarea>
                     <input type="submit" value=">">
                 </form>
             </div>
